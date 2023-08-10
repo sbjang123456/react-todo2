@@ -35,6 +35,8 @@ code {
   height: 60%;
   max-width: 500px;
   background-color: var(--color-bg-dark);
+  overflow: hidden;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   /* https://cssgenerator.org/box-shadow-css-generator.html */
@@ -46,4 +48,9 @@ code {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  outline: none;
+  border: none;
 }
