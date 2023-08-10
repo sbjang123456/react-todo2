@@ -5,6 +5,7 @@
   --color-text: #22243d;
   --color-accent: #f16e03;
   --color-whithe: #ffffff;
+  --color-scrollbar: #aaa7a7;
 }
 body {
   margin: 0;
@@ -19,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  accent-color: var(--color-accent);
   /* https://cssgradient.io/ */
   background: linear-gradient(
     106deg,
@@ -59,4 +61,18 @@ ul {
 button {
   outline: none;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
 }
